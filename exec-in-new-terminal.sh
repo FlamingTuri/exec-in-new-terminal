@@ -19,7 +19,7 @@ case "${KERNEL_NAME}" in
         fi
         ;;
     Darwin*)    machine=Mac
-        osascript -e "tell application \"Terminal\" to do script \"cd $PWD; clear; $1 $COMMANDS\""
+        osascript -e "tell application \"Terminal\" to do script \"cd $PWD; clear; $COMMANDS\""
         ;;
     *)          machine="UNSUPPORTED:${KERNEL_NAME}"
 esac
